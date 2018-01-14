@@ -1,0 +1,7 @@
+RewriteBase /tutorials/videobox/
+RewriteEngine On
+RewriteRule ^channel/([a-zA-Z0-9_-]+)$ channel.php?c=$1
+RewriteRule ^watch/([a-zA-Z0-9_-]+)$ watch.php?videoid=$1
+RewriteRule ^([a-zA-Z0-9_-]+)$ profile.php?u=$1
+php_value upload_max_filesize 1000M
+php_value post_max_size 1000M
